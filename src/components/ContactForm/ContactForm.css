@@ -1,0 +1,91 @@
+.contact-form {
+    background-color: var(--color-amber-50);
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    max-width: 32rem;
+    margin: 0 auto;
+  }
+  
+  .contact-form__title {
+    font-family: 'Alex Brush', cursive;
+    font-size: 2rem;
+    color: var(--color-amber-900);
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .contact-form__message {
+    background-color: var(--color-amber-100);
+    color: var(--color-amber-800);
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .contact-form__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  
+  .contact-form__group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .contact-form__label {
+    color: var(--color-amber-800);
+    font-size: 0.875rem;
+    font-weight: 600;
+  }
+  
+  .contact-form__input,
+  .contact-form__textarea {
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--color-amber-300);
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .contact-form__input:focus,
+  .contact-form__textarea:focus {
+    outline: none;
+    border-color: var(--color-amber-500);
+    box-shadow: 0 0 0 2px rgba(245, 158, 11, 0.2);
+  }
+  
+  .contact-form__textarea {
+    min-height: 8rem;
+    resize: vertical;
+  }
+  
+  .contact-form__submit-button {
+    background-color: var(--color-amber-700);
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .contact-form__submit-button:hover {
+    background-color: var(--color-amber-600);
+  }
+  
+  .contact-form__submit-button:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  @media (min-width: 640px) {
+    .contact-form {
+      padding: 2rem;
+    }
+  }

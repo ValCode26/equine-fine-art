@@ -1,0 +1,72 @@
+/* Footer.css */
+.footer {
+    background-color: #121212; /* Fundal închis */
+    color: #e0e0e0; /* Text deschis */
+    padding: 3rem 0;
+  }
+  
+  .footer__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .footer__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #333; /* Linie de separare */
+  }
+  
+  .footer__logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .footer__logo img {
+    height: 130px;
+    width: auto;
+  }
+  
+
+  
+  .footer__social {
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  .footer__social-link {
+    color: #b3b3b3;
+    transition: color 0.3s;
+  }
+  
+  .footer__social-link:hover {
+    color: #ffffff;
+  }
+  
+  .footer__social-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
+  .footer__copyright {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #999999;
+  }
+  
+  /* Responsive */
+  @media (min-width: 768px) {
+    .footer__content {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    
+    .footer__logo {
+      margin-bottom: 0;
+    }
+  }

@@ -1,0 +1,194 @@
+.about {
+    min-height: 100vh;
+    background-color: var(--color-amber-50);
+    padding: 3rem 1rem;
+  }
+  
+  .about-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+  
+  .about-title {
+    font-size: 2.25rem;
+    color: var(--color-amber-900);
+    margin-bottom: 1rem;
+  }
+  
+  .about-divider {
+    width: 6rem;
+    height: 0.25rem;
+    background-color: var(--color-amber-700);
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about-section {
+    max-width: 72rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4rem;
+  }
+  
+  .about-artist {
+    display: grid;
+    gap: 3rem;
+    margin-bottom: 4rem;
+  }
+  
+  @media (min-width: 768px) {
+    .about-artist {
+      grid-template-columns: repeat(2, 1fr);
+      align-items: center;
+    }
+  }
+  
+  .about-artist-content {
+    order: 2;
+  }
+  
+  @media (min-width: 768px) {
+    .about-artist-content {
+      order: 1;
+    }
+  }
+  
+  .about-artist-title {
+    font-size: 1.875rem;
+    color: var(--color-amber-800);
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-artist-text {
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+  }
+  
+  .about-artist-button {
+    display: inline-block;
+    background-color: var(--color-amber-700);
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+    text-decoration: none;
+    margin-top: 1rem;
+  }
+  
+  .about-artist-button:hover {
+    background-color: var(--color-amber-600);
+  }
+  
+  .about-artist-image-container {
+    order: 1;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  @media (min-width: 768px) {
+    .about-artist-image-container {
+      order: 2;
+    }
+  }
+  
+  .about-artist-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .about-interview {
+    background-color: var(--color-amber-100);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    margin-bottom: 4rem;
+  }
+  
+  .about-interview-title {
+    font-size: 1.875rem;
+    color: var(--color-amber-800);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .about-interview-content {
+    max-width: 48rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .about-interview-item {
+    margin-bottom: 2rem;
+  }
+  
+  .about-interview-question {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-amber-900);
+    margin-bottom: 0.5rem;
+  }
+  
+  .about-exhibitions-title {
+    font-size: 1.875rem;
+    color: var(--color-amber-800);
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .about-exhibitions-grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  @media (min-width: 640px) {
+    .about-exhibitions-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1024px) {
+    .about-exhibitions-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .about-exhibition-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .about-exhibition-card:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  }
+  
+  .about-exhibition-image {
+    width: 100%;
+    height: 12rem;
+    object-fit: cover;
+  }
+  
+  .about-exhibition-details {
+    padding: 1.5rem;
+  }
+  
+  .about-exhibition-name {
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: var(--color-amber-900);
+    margin-bottom: 0.25rem;
+  }
+  
+  .about-exhibition-location {
+    font-size: 0.875rem;
+    color: var(--color-amber-700);
+    margin-bottom: 0.25rem;
+  }
+  
+  .about-exhibition-year {
+    font-size: 0.75rem;
+    color: var(--color-amber-600);
+  }

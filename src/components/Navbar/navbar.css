@@ -1,0 +1,152 @@
+.navbar {
+    background-color: var(--color-amber-900);
+    color: var(--color-amber-50);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  }
+  
+  .navbar__container {
+    max-width: 72rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+  
+  .navbar__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+  }
+  
+  .navbar__logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .navbar__logo-icon {
+    height: 2rem;
+    width: 2rem;
+    color: var(--color-amber-200);
+  }
+  
+  .navbar__logo-text {
+    font-family: 'Alex Brush', cursive;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .navbar__logo-subtext {
+    font-family: 'Alex Brush', cursive;
+    font-size: 1.125rem;
+    display: none;
+  }
+  
+  .navbar__desktop-links {
+    display: none;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .navbar__link {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .navbar__link:hover {
+    color: var(--color-amber-200);
+  }
+  
+  .navbar__contact-button {
+    background-color: var(--color-amber-700);
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .navbar__contact-button:hover {
+    background-color: var(--color-amber-600);
+  }
+  
+  .navbar__mobile-button {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar__toggle {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  
+  .navbar__toggle-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  
+  .navbar__mobile-links {
+    background-color: var(--color-amber-800);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+  }
+  
+  .navbar__mobile-links--open {
+    max-height: 24rem;
+    padding: 1rem 0;
+  }
+  
+  .navbar__mobile-links-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  .navbar__mobile-link {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    color: inherit;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .navbar__mobile-link:hover {
+    background-color: var(--color-amber-700);
+  }
+  
+  .navbar__mobile-contact-button {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    background-color: var(--color-amber-700);
+    color: white;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+  }
+  
+  .navbar__mobile-contact-button:hover {
+    background-color: var(--color-amber-600);
+  }
+  
+  @media (min-width: 768px) {
+    .navbar__logo-subtext {
+      display: block;
+    }
+    
+    .navbar__desktop-links {
+      display: flex;
+    }
+    
+    .navbar__mobile-button {
+      display: none;
+    }
+  }
